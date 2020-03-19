@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="instafeed"></div>
+    <script type="text/javascript">
+    window.onload = function(){
+        $.ajax({
+            type: 'GET',
+            url: 'https://graph.facebook.com/v3.0/17841419214634294?fields=name%2Cmedia.limit(100)%7Bcaption%2Clike_count%2Cmedia_url%2Cpermalink%2Ctimestamp%2Cusername%7D&access_token=EAAJMzPZAM2dABAAXw6KGD9yIAaGUFRxmgWx6OM8tNgJp8sqbBAG6uO8TMgsUabz6LWM2dyMaPIyFIgLBkvPQJJ6ejtofPhkC5smJmXwoIfmCeTSIXQfXtKFgKpNjzwwy0ySa4qiF7NImMmxjZA94SZCMiVD4FeZAT1B0eAiALnB9y9Bi5TYTMc1cGROGYaIZD',
+            dataType: 'json',
+            success: function(json) {
+                var html = '';
+                var insta = json.media.data;
+                for (var i = 0; i < insta.length; i++) {
+                    html += '<div class="feed"><a href="' + insta[i].permalink + '" target="_blank"><img width="400px" src="' + insta[i].media_url + '"></a></div>';
+                }
+                $("#instafeed").append(html);			
+            },
+            error: function() {
+                //エラー時�?�処�?
+                var html = '';
+                html += 'error';
+                $("#instafeed").append(html);
+            }
+        });
+    };
+    </script>
+</body>
+</html>
