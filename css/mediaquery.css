@@ -1,0 +1,225 @@
+/* 1300px以下の環境 */
+@media screen and (max-width: 1300px)
+{
+    .header-right ul
+    {
+        display: none;
+    }
+}
+/* 750px以下の環境 */
+@media screen and (max-width: 750px)
+{
+    #tabcontrol
+    {
+        display: none;
+    }
+}
+/*981px以上の環境*/
+@media screen and (min-width: 981px)
+{
+    .main
+    {
+        padding-top: 100px;
+    }
+    .br-sp
+    {
+        display: none;
+    }
+}
+/* 641px以上980px以下の環境 */
+@media screen and (min-width: 641px) and (max-width: 980px)
+{
+    .main
+    {
+        padding-top: 90px;
+    }
+    #header
+    {
+        height: 60px;
+    }
+    .header-left img
+    {
+        height: 60px;
+        margin-top: 6px;
+        padding-top: 0;
+    }
+    .header-right ul
+    {
+        display: none;
+    }
+    .header-right
+    {
+        width: 30%;
+    }
+    .header-right img, #tabcontrol
+    {
+        height: 60px;
+    }
+    #tabcontrol{
+        line-height: 60px;
+        margin: 0 0;
+    }
+    .top-wrapper-container h1
+    {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+    .top-wrapper-container p
+    {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    .main-contents h1
+    {
+        font-size: 30px;
+    }
+    .content
+    {
+        float: none;
+        width: 50%;
+    }
+    .content-left
+    {
+        float: left;
+    }
+    .content-right
+    {
+        float: right;
+    }
+    .br-sp
+    {
+        display: none;
+    }
+}
+/* 640px以下の環境 */
+@media screen and (max-width: 640px)
+{
+    .main
+    {
+        padding-top: 54px;
+    }
+    #header
+    {
+        height: 40px;
+    }
+    .header-left
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .logo
+    {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .logo a
+    {
+        display: block;
+    }
+    .logo img
+    {
+        display: inline-block;
+        height: 40px;
+        padding-top: 0;
+    }
+    .header-left ul
+    {
+        display: none;
+    }
+    .header-right
+    {
+        display: none;
+    }
+    /* index.htmlのwelcomeメッセージ部分 */
+    .top-wrapper-container
+    {
+        top: 25%;
+        right: 5%;
+        left: 5%;
+        display: block;
+        width: 85vw;
+        height: 62%;
+        border: solid 6px white;
+        border-radius: 16px;
+    }
+    .top-wrapper-container h1
+    {
+        font-size: 6vw;
+        line-height: 12vw;
+        display: flex;
+        height: 78.5%;
+        text-align: left;
+        letter-spacing: 2px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-wrapper-container p
+    {
+        display: none;
+    }
+    .main-contents h1
+    {
+        font-size: 20px;
+    }
+    .style-indent
+    {
+        margin-left: 8%;
+        padding: 0;
+        border-left: none;
+    }
+    .research-style h1,
+    .member-style h1,
+    .access-style h1,
+    .links-style h1
+    {
+        font-size: 24px;
+    }
+    .research-style h2,
+    .member-style h2,
+    .access-style h2,
+    .links-style h2
+    {
+        font-size: 18px;
+    }
+    .img-rnd
+    {
+        clear: right;
+        width: 100%;
+        margin-bottom: 7px;
+        margin-left: auto;
+    }
+    .img-sml
+    {
+        clear: left;
+        width: 100%;
+        margin-right: auto;
+        margin-bottom: 7px;
+    }
+    .img-lib
+    {
+        clear: right;
+        width: 100%;
+        margin-bottom: 7px;
+        margin-left: auto;
+    }
+    .content
+    {
+        float: none;
+        width: 100%;
+    }
+    .footer
+    {
+        font-size: 14px;
+    }
+}
+/* 400px以下の環境 */
+@media screen and (max-width: 400px)
+{
+    .main-contents h1
+    {
+        font-size: 16px;
+    }
+}
